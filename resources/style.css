@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    grid-template: 80px 6fr 1fr 50px / 4fr 3fr;
+    
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+}
+
+li, a {
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: 1 / 1 / span 1/ span 2;
+}
+
+/* logo */
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-rocket {
+    padding: 5px;
+}
+
+/* nav bar and shortcut icons*/
+.nav {
+    flex-grow: 2;
+}
+
+.nav-link, .shortcut-link {
+    list-style-type: none;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.shortcut-link li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-link li a, .shortcut-link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover, .shortcut-link li a:hover {
+    color: #0088a9;
+}
+
+/* about me */
+#about-me {
+    align-self: center;
+    padding: 30px;
+}
+/* portrait */
+#portrait {
+    align-self: center;
+}
+
+#portrait img {
+    width: 100%;
+}
+/* skills section */
+
+#skills {
+    grid-area: 3 / 1 / span 1/ span 2;
+
+}
+
+#skills-container {
+    margin-top: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* footer */
+
+footer {
+    grid-area: 4 / 1 / span 1/ span 2;
+}
+
+
+
+
