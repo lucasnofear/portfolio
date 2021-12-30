@@ -17,4 +17,9 @@ the professional looking icons.
 
 ## Demo
 
-You can visit the website by going [here](https://xxxxx).
+Landscape | Portrait
+--- | ---
+![image info](./resources/images/landscape.png)| ![image info](./resources/images/portrait.png)
+
+
+You can visit the website by going [here](https://lucasnofear.github.io/portfolio/).
