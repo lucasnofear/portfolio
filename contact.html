@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="resources/style.css" />
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/aa2a2f1bc0.js" crossorigin="anonymous"></script>
+    </head>
+    <body id='contact'>
+        <header>
+            <div class='logo'>
+                <i class="fas fa-rocket fa-3x"></i>
+                <h1>Lucas Shi</h1>
+            </div>
+            <nav>
+                <ul class='nav-link'> 
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class='shortcut'>
+                <ul class='shortcut-link'>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <h2 id='contact-title'>Are you a snowboarder or skier?</h2>
+        <section id="my-info">
+            <div class='my-info-item'>
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <h3>647-649-xxxx</h3>
+            </div>
+            <div class='my-info-item'>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <h3>Toronto</h3>
+            </div>
+            <div class='my-info-item'>
+                <i class="fas fa-envelope fa-2x"></i>
+                <h3>xxxxx@gmail.com</h3>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <form action="contact.html" method="get">
+                <input type="text" id='name' name='name' placeholder="Full Name" required>
+                <input type="email" id='email' name='email' placeholder="Email" required>
+                <input type="text" id='subject' name='subject' placeholder="Subject" required>
+                <input type="submit" id='submit' name='submit' value="Send Message">
+                <textarea id='message' name='message' required rows='8' cols='40'>
+                </textarea>
+                <div id='snowboarder-skier'>
+                    <label for='snowboarder'><i class="fas fa-snowboarding"></i>snowboarder</label>
+                    <input type='radio' id='snowboarder' name='answer' value='snowboarder' required>
+                    
+                    <label for='skier'><i class="fas fa-skiing"></i>skier</label>
+                    <input type='radio' id='skier' name='answer' value='skier' required>
+                    
+                </div>
+            </form>
+        </section>
+        
+        <footer>
+            Happy <span class="heart">♥</span> Shreadding~
+        </footer>
+
+    </body>
+</html>

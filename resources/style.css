@@ -1,27 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans:wght@300;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
+
+/* about page */
 
 body {
     width: 100vw;
     height: 100vh;
-    display: grid; 
-    grid-template: 80px 6fr 1fr 50px / 4fr 3fr;
-    
     gap: 10px;
     padding: 20px;
     box-sizing: border-box;
-}
-
-h1 {
     font-family: 'Bree Serif', serif;
 }
+
+#about {
+    display: grid; 
+    grid-template: 80px 6fr 1fr 50px / 4fr 3fr;
+}
+
 
 li, a {
-    font-family: 'Bree Serif', serif;
     font-weight: 500;
     font-size: 16px;
     color: black;
@@ -71,7 +73,7 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.nav-link li a:hover, .shortcut-link li a:hover {
+.nav-link li a:hover, .shortcut-link li a:hover, .logo:hover {
     color: #0088a9;
 }
 
@@ -80,6 +82,31 @@ header {
     align-self: center;
     padding: 30px;
 }
+
+.about-me-title, .about-me-p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-me-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.l2 {
+    text-indent: 1em;
+}
+
+.l3 {
+    text-indent: 2em;
+}
+
+.about-me-p {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 /* portrait */
 #portrait {
     align-self: center;
@@ -107,8 +134,74 @@ header {
 
 footer {
     grid-area: 4 / 1 / span 1/ span 2;
+    text-align: center;
 }
 
+/* contact page */
+#contact {
+    display: grid; 
+    grid-template: 80px 1fr 3fr 50px / 3fr 4fr;
+}
 
+#contact-title {
+    grid-area: 2 / 1 / span 1/ span 2;
+    align-self: center;
+}
 
+#my-info {
+    display: flex;
+    flex-direction: column;
+}
 
+.my-info-item {
+    display: flex;
+    padding: 10px;
+}
+
+.my-info-item i {
+    padding: 10px;
+    color: #0088a9;
+}
+
+.my-info-item h3 {
+    padding: 10px;
+}
+
+/* form */
+
+form {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 3fr 4fr;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    padding: 10px;
+}
+
+#message {
+    grid-area: 1 / 2 / span 3 / span 1;
+}
+
+input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Bree Serif', serif;
+}
+
+#submit {
+    border-color: #0088a9;
+    background-color: white;
+}
+
+#submit:hover {
+    background-color: #0088a9;
+    color: white;
+}
+
+#snowboarder-skier {
+    grid-area: 4 / 1 / span 1 / span 2;
+    justify-self: start;
+}
+
+.heart {
+    color: red;
+}
