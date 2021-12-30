@@ -12,7 +12,7 @@ Codecademy and will develop this website to showcase any future projects.
 
 ## Overview
 
-This simple portfolio site uses CSS flexbox, grid, semantic HTML, and responsive design principle. Also use google fonts for the interesting fonts and font awesome for 
+This simple portfolio site uses CSS flexbox, grid, semantic HTML, and responsive design. Also use google fonts for the interesting fonts and font awesome for 
 the professional looking icons.
 
 ## Demo

@@ -25,7 +25,7 @@ body {
 
 li, a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
 }
@@ -88,7 +88,7 @@ header {
 }
 
 .about-me-title {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -103,7 +103,7 @@ header {
 .about-me-p {
     margin-top: 5px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -204,4 +204,44 @@ input, textarea {
 
 .heart {
     color: red;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 768px) {
+    .logo h1 {
+        display: none;
+    }
+    
+    #portrait {
+        display:none;
+    }
+
+    #about {
+        display: grid; 
+        grid-template: 80px 6fr 1fr 50px / 4fr 0.1fr;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    form * {
+        flex-shrink: 1;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* contact page */
+    #contact {
+        display: flex; 
+        flex-direction: column;
+    }
 }
